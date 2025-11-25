@@ -7,7 +7,51 @@
   --destaque-inverso
   --fundo-card
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fundo-principal:#f5f5f5;
+  --texto:#222222;
+  --texto-inverso:  #ffffff;
+  --destaque: #007BFF;
+  --destaque-inverso: #66bbff;
+  --fundo-card: #ffffff;
+}
 body {
-  background-color: lightgrey;
-  color: darkblue;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.5em;
+background-color: var(--fundo-principal);
+color: var(--texto);
+}
+header {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  padding: 10px;
+ /* padding: 1rem 0;
+  text-align: center;*/
+  display: flex;
+  justify-content:flex-end;/* alinha o conteúdo à direita */
+  align-items: center;/* alinha o conteúdo verticalmente */
+}
+nav#menu ul{
+
+ list-style: none;/* remove marcadores da lista */
+  display: flex;/* transforma em flexbox */
+  
+  gap: 10px;/* espaçamento entre os itens */
+}
+nav#menu a{
+  text-decoration: none;/* remove sublinhado */
+  color: var(--texto-inverso);
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+nav#menu a:hover{
+  background-color: var(--destaque-inverso);
+  color:var(--destaque) ;
 }
