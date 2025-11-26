@@ -55,3 +55,50 @@ nav#menu a:hover{
   background-color: var(--destaque-inverso);
   color:var(--destaque) ;
 }
+main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 90vw auto;/* três colunas: automática, 90% da largura da viewport, automática */
+}
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;/* posiciona na segunda coluna da grid */
+}
+section#ficha img.foto{
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1/1;/* mantém proporção quadrada */
+  border-radius: 50%;/* torna a imagem circular */
+  object-fit: cover;/* garante que a imagem preencha o espaço sem distorção */
+  border: 5px solid var(--fundo-card);/* borda vermelha ao redor da imagem */
+  outline: 5px solid var(--destaque);/* contorno verde ao redor 
+  da borda */
+ display: block;/* transforma em bloco para aplicar margin */
+ margin: auto;/* centraliza horizontalmente */
+ margin-bottom:15px ;
+
+}
+section#ficha h1{
+  color: var(--destaque);
+  text-align:left;
+  margin-bottom: 15px 0;
+  font-size: 1.5em;
+}
+div#social{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.6em;
+  align-items: center;
+  margin-top: 15px;
+}
+div.social a  {
+ color:  var(--destaque);
+  transition: color 0.5s;
+}
+div.social  a:hover {
+  background-color: var(--destaque);
+  color: var(--destaque-inverso);
+}
