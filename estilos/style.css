@@ -35,7 +35,13 @@ header {
   display: flex;
   justify-content:flex-end;/* alinha o conteúdo à direita */
   align-items: center;/* alinha o conteúdo verticalmente */
+  position: sticky;/*o hader fica fixo*/
+  top: 0;
+  z-index: 1;
+
+
 }
+
 nav#menu ul{
 
  list-style: none;/* remove marcadores da lista */
@@ -201,8 +207,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  
-
+ 
 
 
    background-color: var(--fundo-principal);
@@ -223,6 +228,8 @@ cursor: pointer;
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
+
+   
 }
 footer {
   background-color: var(--destaque);
@@ -255,4 +262,5 @@ footer a:hover{
     max-height: 200px;
   }
 }
+
 
