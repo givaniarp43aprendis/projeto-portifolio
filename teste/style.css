@@ -1,0 +1,104 @@
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: cornflowerblue;
+  }
+
+  header {
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+    
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+
+    position: sticky;
+top: 1px;
+   
+  }
+  nav a {
+    color: white;
+    display:inline-block;
+    text-decoration: none;
+    
+    
+ 
+  }
+  nav a:hover {
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  main{
+    background-color: cornflowerblue;
+    color:white ;
+    height: 100%;
+    width: 100%;
+  }
+  main h1 {
+    margin: 15px;
+   color: white;
+  }
+  main.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   flex-wrap: wrap-reverse;
+    
+  }
+  article.item {
+ flex: auto;
+  }
+  div.foto img {
+    height: 200px;
+display: inline-block;
+margin: 10px;
+box-shadow: 3px 5px blue;
+border-radius: 5px;
+  }
+  p {
+    margin: 10px;
+  }
+  div.video iframe {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px blue;
+  }
+  aside {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+  }
+  footer {
+    background-color: cornflowerblue;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+@media   screen and (min-width:768px) {
+body {
+    background-color: rgb(66, 11, 118);
+
+
+}
+main {
+    background-color: blueviolet;
+    
+}
+main.container {
+    display:grid;
+    grid-column: 2/3;
+height: fit-content;
+position: sticky;/*fixa o conteúdo*/
+top: 50px;
+    gap: 15px;
+}
+  }
